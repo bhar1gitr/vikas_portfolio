@@ -21,21 +21,6 @@ const Yoga = () => {
 
       </Container>
 
-      <h1 style={{ textAlign: 'center' }} className="mt-5">Yog Nidra</h1>
-      <Container className="astang mt-5">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pax3xEv2vZc?si=vd3AEN7a-h78tMxp" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p data-aos="fade-left">Yoga nidra, also known as yogic sleep, is an ancient meditation technique that brings practitioners into a deeper state of conscious relaxation.
-          Yoga nidra involves entering a state of conscious sleep where the body is completely relaxed, yet the mind remains awake and alert.
-          During a yoga nidra session, practitioners follow verbal instructions that incorporate breath awareness, body scanning, and other techniques.
-          Unlike traditional meditation, which focuses on a single point, yoga nidra encourages internal withdrawal of the senses.
-          Sessions can range from 15 minutes to over an hour, guiding individuals between wakefulness and dreaming.
-          Benefits:
-          Yoga nidra rejuvenates both the physical body and the spirit.
-          It allows practitioners to tap into inner wisdom and find peace beyond external chaos.
-          The practice can lead to transformative work at mental, emotional, and physical levels.
-          If you’re interested in experiencing yoga nidra, you can explore guided videos</p>
-      </Container>
-
       <h1 style={{ textAlign: 'center' }} className="mt-5">Stress Management</h1>
       <Container className="stress mt-5">
         <p data-aos="fade-right">I have conducted a session on stress management, comprising 11 videos that emphasize maintaining overall well-being and productivity. These videos cover effective stress management techniques, including mindfulness, meditation, relaxation techniques, healthy lifestyle choices, and setting boundaries. Through this comprehensive approach, I aim to empower individuals to effectively manage stress and enhance their overall quality of life.</p>
@@ -45,5 +30,6 @@ const Yoga = () => {
     </>
   )
 }
+
 
 export default Yoga
