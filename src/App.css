@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* SCSS */
+/* @import "~react-image-gallery/styles/scss/image-gallery.scss"; */
+
+/* CSS */
+/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
+
+body{
+  background-color: #DED0B6 !important;
+  font-family: "Roboto Mono", monospace !important;
+  font-optical-sizing: auto;
+  color: #4A453D !important;
+}
+
+/* Targeting the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+/* Styling the scrollbar handle (thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: #4A453D; /* Set the color of the scrollbar handle */
+  border-radius: 6px; /* Set the border radius for a rounded appearance */
+}
+
+/* Styling the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #DED0B6; /* Set the color of the scrollbar track */
+  border-radius: 8px; /* Set the border radius for a rounded appearance */
+}
+
+/* Styling the scrollbar buttons (arrows) */
+::-webkit-scrollbar-button {
+  display: none; /* Hide the scrollbar buttons */
+}
+
+/* Nav */
+.logo{
+  background: url("./assets/logo.png");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+}
+
+/* Hero */
+
+
+.hero-section{
+    display: flex;
+}
+
+.hero-section .left{
+    padding:140px 100px;
+    background-color: #BBAB8C;
+    width: 50%;
+    height: 90vh;
+    text-align: center;
+}
+
+.hero-section img{
+    width: 100%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.4);
+}
+
+.hero-section .right{
+    width: 50%;
+    padding: 80px 100px;
+}
+
+/* Pravachan */
+.china, .astang, .stress{
+  display: flex;
+  justify-content: space-between;
+}
+
+.china iframe, .china p, .astang iframe, .astang p, .stress iframe, .stress p{
+  width: 48%;
+}
+
+/* whatIDo */
+
+.what-i-do .main{
+    display: flex;
+    margin-top: 20px;
+}
+
+.what-i-do .main .data{
+  background-color: #BBAB8C;
+  padding: 50px 30px;
+  width: 90%;
+}
+
+.what-i-do .main .img img{
+    width: 100%;
+}
+
+
+/* Achievements */
+.row{
+  margin-top: 120px;
+}
+
+.card{
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  border: none !important;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+    border: none !important;
+    cursor: pointer;
+}
+
+.card-body{
+  background-color: #BBAB8C;
+}
+
+/* Office */
+.office .one .left img, .office .two .right img, .office .three .left img, .office .four .right img{
+  border: 10px solid black;
+}
+
+.office .one, .office .two, .office .three, .office .four{
+  display: flex;
+}
+
+.office .one .left{
+  text-align: center;
+}
+
+.office .one .left img{
+  width: 70%;
+}
+
+.office .two .left{
+  padding: 60px 0px;
+}
+
+.office .two .right{
+  text-align: center;
+}
+
+.office .two .right img{
+  width: 90%;
+}
+
+.office .three .left img{
+  width: 90%;
+}
+
+.office .four .right img{
+  width: 90%;
+}
+
+.office .one .left,.office .one .right, .office .two .left,.office .two .right, .office .three .left,.office .three .right,.office .four .left,.office .four .right{
+  width: 50%;
+}
+
+.office .three .left, .office .four .right{
+  text-align: center;
+}
+/* Footer */
+.footer {
+    background-color: #BBAB8C;
+    padding: 40px 0;
+    margin-top: 80px;
+  }
+  
+  .footer h3 {
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  
+  .footer .text-center {
+    margin-top: 20px;
+  }
+  
+
+  @media (max-width: 600px) {
+    /* NavBar */
+
+    /* Hero */
+    .hero-section{
+      flex-direction: column !important;
+    }
+
+    .hero-section .left, .hero-section .right{
+      width: 100%;
+    }
+
+    .hero-section .left{
+      padding: 190px 22px;
+    }
+
+    .hero-section .right{
+      padding: 80px 33px;
+    }
+
+    .hero-section .right p{
+      text-align: justify;
+    }
+
+    /* What-i-do */
+    .what-i-do .main{
+      flex-direction: column;
+    }
+
+    /* Office */
+    .office .three{
+      flex-direction: column;
+    }
+
+    .office .three .left, .office .three .right{
+      width: 100%;
+    }
+    
+    #lion{
+      width: 80% !important;
+    }
+
+    .office-p{
+      text-align: justify;
+      padding: 0px 20px;
+    }
+
+    /* Pravachan */
+    .china, .stress{
+      flex-direction: column;
+    }
+
+    .astang{
+      flex-direction: column-reverse;
+    }
+
+    .china p, .astang p, .stress p{
+      text-align: justify;
+      padding: 20px 20px;
+    }
+
+    .china iframe, .china p, .astang iframe, .astang p, .stress iframe, .stress p{
+      width: 100%;
+    }
+  }
